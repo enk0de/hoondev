@@ -1,0 +1,203 @@
+.aboutme_container {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-bottom: 150px;
+
+  .caption_container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    @media only (max-width: 768px) {
+      display: inline;
+    }
+    .caption_item {
+      flex-grow: 1;
+      flex-basis: 0;
+    }
+    .caption_title {
+      font-size: 3.2rem;
+      color: #42474b;
+      font-weight: 300;
+      letter-spacing: -0.03em;
+      @media only (max-width: 768px) {
+        font-size: 2rem;
+      }
+    }
+    .caption_description {
+      @media only (max-width: 768px) {
+        margin-top: 15px;
+      }
+    }
+  }
+  .intin_devstack_container {
+    display: flex;
+    width: 100%;
+    margin-top: 40px;
+    justify-content: center;
+    @media only (max-width: 768px) {
+      display: inline;
+    }
+    .intin_devstack_item {
+      text-align: center;
+      flex: 1;
+      .intin_devstack_item_logo_container {
+        display: inline-block;
+        width: 130px;
+        height: 150px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        &.js {
+          background-image: url('../../images/js-logo.svg');
+        }
+
+        &.vue {
+          background-image: url('../../images/vuejs-logo.svg');
+        }
+
+        &.react {
+          background-image: url('../../images/react-logo-2.png');
+        }
+
+        &.es6 {
+          background-image: url('../../images/es6-logo.svg');
+        }
+
+        &.xd {
+          background-image: url('../../images/xd-logo.svg');
+        }
+
+        &.firebase {
+          background-image: url('../../images/firebase-logo.svg');
+        }
+
+        &.java {
+          background-image: url('../../images/es6-logo.svg');
+        }
+
+        &.cpp {
+          background-image: url('../../images/es6-logo.svg');
+        }
+
+        &.swift {
+          background-image: url('../../images/es6-logo.svg');
+        }
+      }
+      .intin_devstack_item_name {
+        position: relative;
+        display: inline-block;
+        color: #41494e;
+        margin: 10px 0 20px 0px;
+        font-size: 1.2rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+
+        .bg {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 9px;
+          bottom: 0;
+          background: #fff57e;
+        }
+
+        .text {
+          position: relative;
+        }
+      }
+      .intin_devstack_item_description {
+        margin: 0px 30px 30px 30px;
+        letter-spacing: -0.03rem;
+        // color: #72797e;
+      }
+    }
+  }
+
+  .devstack_container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    @media only (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    grid-gap: 1rem;
+    width: 100%;
+    margin-top: 40px;
+    .devstack_item {
+      text-align: center;
+      .devstack_item_logo_container {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      .devstack_item_name {
+        position: relative;
+        display: inline-block;
+        color: #41494e;
+        margin: 10px 0 20px 0px;
+        font-size: 0.9rem;
+        font-weight: 700;
+        letter-spacing: 0.2rem;
+
+        .bg {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 9px;
+          bottom: 0;
+          background: #fff57e;
+        }
+
+        .text {
+          position: relative;
+        }
+      }
+      .devstack_item_description {
+        margin: 0px 30px 30px 30px;
+        letter-spacing: -0.03rem;
+        color: #72797e;
+      }
+    }
+  }
+  .content_title {
+    margin-top: 60px;
+  }
+}
+
+.js {
+  background-image: url('../../images/js-logo.svg');
+}
+
+.vue {
+  background-image: url('../../images/vuejs-logo.svg');
+}
+
+.react {
+  background-image: url('../../images/react-logo-2.png');
+}
+
+.es6 {
+  background-image: url('../../images/es6-logo.svg');
+}
+
+.xd {
+  background-image: url('../../images/xd-logo.svg');
+}
+
+.firebase {
+  background-image: url('../../images/firebase-logo.svg');
+}
+
+.node {
+  background-image: url('../../images/nodejs-logo-2.svg');
+}

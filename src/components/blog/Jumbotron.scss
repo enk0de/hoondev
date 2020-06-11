@@ -1,0 +1,16 @@
+.blog-jumbotron_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+  background: url('../../images/blog-jumbotron.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  .caption {
+    color: white;
+    font-size: 2.5rem;
+  }
+}
