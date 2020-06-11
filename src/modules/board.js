@@ -1,9 +1,13 @@
+import { firestore } from '../api/firebase';
+
 const BOARD_SAVE = 'board/SAVE';
 const BOARD_REMOVE = 'board/REMOVE';
 const BOARD_READ = 'board/READ';
 const BOARD_TOGGLE = 'board/TOGGLE';
 
 const BOARD_LIST = 'board/LIST';
+const BOARD_LIST_SUCCESS = 'board/LIST_SUCCESS';
+const BOARD_LIST_FAILURE = 'board/LIST_FAILURE';
 
 export const save = (data) => ({
   type: BOARD_SAVE,
@@ -12,11 +16,6 @@ export const save = (data) => ({
 
 export const remove = (id) => ({
   type: BOARD_REMOVE,
-  id: id,
-});
-
-export const read = (id) => ({
-  type: BOARD_READ,
   id: id,
 });
 
@@ -31,23 +30,37 @@ export const toggle = (id) => ({
 
 const initialState = {
   maxNo: 1,
-  documents: [
-    {
-      id: 0,
-      date: new Date(2020, 1, 29, 3, 30),
-      title: '테스트',
-      desc: '데스크테스트',
-      contents: 'zz',
-    },
-    {
-      id: 1,
-      date: new Date(2020, 1, 30),
-      title: '테스트',
-      desc: '데스크테스트',
-      contents: 'dd',
-    },
-  ],
+  documents: [],
   selectedDocument: {},
+  loading: {
+    get: false,
+  },
+};
+
+export const listingAsync = () => async (dispatch) => {
+  dispatch({ type: BOARD_LIST });
+  try {
+    const response = await firestore
+      .collection('documents')
+      .get()
+      .then((querySnapshot) => {
+        const respData = [];
+        querySnapshot.forEach((doc) => {
+          respData.push(doc.data());
+        });
+        return respData;
+      });
+    dispatch({
+      type: BOARD_LIST_SUCCESS,
+      payload: response,
+    });
+  } catch (e) {
+    dispatch({
+      type: BOARD_LIST_FAILURE,
+      payload: e,
+      error: true,
+    });
+  }
 };
 
 const board = (state = initialState, action) => {
@@ -64,8 +77,31 @@ const board = (state = initialState, action) => {
         ...state,
         selectedDocument: state.documents.find((doc) => doc.id === action.id),
       };
-    case BOARD_READ:
-      return {};
+    case BOARD_LIST:
+      return {
+        ...state,
+        loading: {
+          ...state.loading,
+          get: false,
+        },
+      };
+    case BOARD_LIST_SUCCESS:
+      return {
+        ...state,
+        loading: {
+          ...state.loading,
+          get: true,
+        },
+        documents: action.payload,
+      };
+    case BOARD_LIST_FAILURE:
+      return {
+        ...state,
+        loading: {
+          ...state.loading,
+          get: false,
+        },
+      };
     default:
       return state;
   }

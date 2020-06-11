@@ -4,7 +4,7 @@ import { toggle } from '../modules/board';
 import Document from '../components/blog/document';
 import qs from 'qs';
 
-const DocumentContainer = ({ id, date, title, contents, toggle }) => {
+const DocumentContainer = ({ id, date, title, contents, toggle, location }) => {
   return <Document id={id} date={date} title={title} contents={contents} />;
 };
 

@@ -15,7 +15,7 @@ const Document = ({ id, title, contents, date, toggle }) => {
         </Link>
         <h2 className="title">{title}</h2>
         <div className="info">
-          <span className="date">{date.toLocaleString('ko-KR')}</span>
+          <span className="date">{date}</span>
         </div>
       </div>
       <p>{contents}</p>

@@ -1,26 +1,33 @@
-import React, { useMemo, useCallback } from 'react';
+import React, { useMemo, useEffect } from 'react';
 import { connect } from 'react-redux';
-import { toggle } from '../modules/board';
+import { toggle, listingAsync } from '../modules/board';
 import Blog from '../components/blog';
 import qs from 'qs';
 
-const BlogContainer = ({ toggle, location }) => {
-  const query = useMemo(
-    () =>
-      qs.parse(location.search, {
+const BlogContainer = ({ loading, toggle, location, listingAsync }) => {
+  useEffect(() => {
+    listingAsync();
+  }, [listingAsync]);
+
+  useEffect(() => {
+    if (loading.get) {
+      const queryId = qs.parse(location.search, {
         ignoreQueryPrefix: true,
-      }),
-    [location.search],
-  );
+      }).id;
 
-  const setCurDoc = useCallback(() => {
-    if (query.id) toggle(parseInt(query.id));
-  }, [query]);
+      toggle(parseInt(queryId));
+    }
+  }, [loading]);
 
-  setCurDoc();
   return <Blog />;
 };
 
-export default connect(null, {
-  toggle,
-})(BlogContainer);
+export default connect(
+  ({ board }) => ({
+    loading: board.loading,
+  }),
+  {
+    toggle,
+    listingAsync,
+  },
+)(BlogContainer);
