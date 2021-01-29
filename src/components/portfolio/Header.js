@@ -29,9 +29,9 @@ const Header = () => {
           />
         </div>
 
-        <Link to="/blog" className="menu">
-          BLOG
-        </Link>
+        <a href='https://feed.hoondev.com' target="_blank" className="menu">
+          피드 블로그
+        </a>
       </div>
       <div className="navbar_center">
         <img className="logo" src={logo}></img>

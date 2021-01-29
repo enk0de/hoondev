@@ -25,9 +25,9 @@ const Vitae = () => {
         <h3>중앙대학교 서울캠퍼스</h3>
         <sub>2019. 3~</sub>
         <span className="vitae_item_description">
-          소프트웨어학부 학부과정 재학중
-          <br />총 2학기 총학점평균 — <b>3.74</b> / 4.50
-          <br />총 2학기 전공학점평균 — <b>3.89</b> / 4.50
+          소프트웨어학부 학부과정 재학중(휴학예정)
+          <br />총 4학기 총학점평균 — <b>3.97</b> / 4.50
+          <br />총 4학기 전공학점평균 — <b>4.12</b> / 4.50
           <br />
         </span>
         <h3>남산고등학교</h3>
@@ -54,6 +54,16 @@ const Vitae = () => {
         <sub>2019. 10</sub>
         <span className="vitae_item_description">
           노력상(한국관광공사장상) 수상
+        </span>
+        <h3>SW & AI 창업아이디어경진대회</h3>
+        <sub>2020. 9</sub>
+        <span className="vitae_item_description">
+          우수상
+        </span>
+        <h3>CDIC 캡스톤디자인공모전</h3>
+        <sub>2020. 10</sub>
+        <span className="vitae_item_description">
+          소프트웨어학장상(최우수상)
         </span>
       </div>
       <div className="vitae_item">

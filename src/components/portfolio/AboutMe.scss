@@ -54,42 +54,6 @@
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
-
-        &.js {
-          background-image: url('../../images/js-logo.svg');
-        }
-
-        &.vue {
-          background-image: url('../../images/vuejs-logo.svg');
-        }
-
-        &.react {
-          background-image: url('../../images/react-logo-2.png');
-        }
-
-        &.es6 {
-          background-image: url('../../images/es6-logo.svg');
-        }
-
-        &.xd {
-          background-image: url('../../images/xd-logo.svg');
-        }
-
-        &.firebase {
-          background-image: url('../../images/firebase-logo.svg');
-        }
-
-        &.java {
-          background-image: url('../../images/es6-logo.svg');
-        }
-
-        &.cpp {
-          background-image: url('../../images/es6-logo.svg');
-        }
-
-        &.swift {
-          background-image: url('../../images/es6-logo.svg');
-        }
       }
       .intin_devstack_item_name {
         position: relative;
@@ -200,4 +164,43 @@
 
 .node {
   background-image: url('../../images/nodejs-logo-2.svg');
+}
+
+.java {
+  background-image: url('../../images/es6-logo.svg');
+}
+
+.cpp {
+  background-image: url('../../images/es6-logo.svg');
+}
+
+.swift {
+  background-image: url('../../images/es6-logo.svg');
+}
+
+.angular {
+  background-image: url('../../images/angular.svg');
+}
+
+.nextjs {
+  background-image: url('../../images/nextjs.svg');
+}
+
+.ts {
+  background-image: url('../../images/ts.svg');
+}
+
+.rxjs {
+  background-image: url('../../images/rxjs.svg');
+}
+
+.gql {
+  background-image: url('../../images/graphql.svg');
+}
+
+.apollo {
+  background-image: url('../../images/apollo.svg');
+}
+.figma {
+  background-image: url('../../images/figma.svg');
 }

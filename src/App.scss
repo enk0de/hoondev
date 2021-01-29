@@ -123,6 +123,7 @@ h3 {
     }
 
     &.disabled {
+      cursor: not-allowed;
       color: rgb(134, 134, 134);
       background: #f1f1f1;
     }
