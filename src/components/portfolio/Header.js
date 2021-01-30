@@ -38,7 +38,7 @@ const Header = () => {
       </div>
       <div className="navbar_right">
         <a
-          href="https://github.com/huneeeee"
+          href="https://github.com/hoondeveloper"
           className="static_btn rounded pb narrow"
         >
           <FontAwesomeIcon icon={faGithub} />
