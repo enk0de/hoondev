@@ -39,31 +39,31 @@ const Vitae = () => {
       </div>
       <div className="vitae_item">
         <h2>수상 및 실적</h2>
-        <h3>중앙대학교 2019학년도 입시</h3>
-        <sub>2019. 3</sub>
+        <h3>CDIC 캡스톤디자인공모전</h3>
+        <sub>2020. 10</sub>
         <span className="vitae_item_description">
-          수시 SW인재전형 <br />
-          수석 입학
-        </span>
-        <h3>다빈치 소프트웨어 Dream 창업캠프(입문)</h3>
-        <sub>2019. 3</sub>
-        <span className="vitae_item_description">
-          최우수상(한국창업교육협의회장상) 수상
-        </span>
-        <h3>2019 스마트관광 앱 개발 공모전</h3>
-        <sub>2019. 10</sub>
-        <span className="vitae_item_description">
-          노력상(한국관광공사장상) 수상
+          소프트웨어학장상(최우수상)
         </span>
         <h3>SW & AI 창업아이디어경진대회</h3>
         <sub>2020. 9</sub>
         <span className="vitae_item_description">
           우수상
         </span>
-        <h3>CDIC 캡스톤디자인공모전</h3>
-        <sub>2020. 10</sub>
+        <h3>2019 스마트관광 앱 개발 공모전</h3>
+        <sub>2019. 10</sub>
         <span className="vitae_item_description">
-          소프트웨어학장상(최우수상)
+          노력상(한국관광공사장상) 수상
+        </span>
+        <h3>다빈치 소프트웨어 Dream 창업캠프(입문)</h3>
+        <sub>2019. 3</sub>
+        <span className="vitae_item_description">
+          최우수상(한국창업교육협의회장상) 수상
+        </span>
+        <h3>중앙대학교 2019학년도 입시</h3>
+        <sub>2019. 3</sub>
+        <span className="vitae_item_description">
+          수시 SW인재전형 <br />
+          수석 입학
         </span>
       </div>
       <div className="vitae_item">
