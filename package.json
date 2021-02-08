@@ -11,7 +11,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "axios": "^0.21.1",
-    "firebase": "^7.15.0",
+    "firebase": "^8.0.1",
     "immer": "^8.0.1",
     "include-media": "^1.4.9",
     "node-sass": "^4.14.1",
