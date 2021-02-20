@@ -68,6 +68,16 @@ const Vitae = () => {
       </div>
       <div className="vitae_item">
         <h2>대외활동</h2>
+        <h3>YAPP</h3>
+        <sub>2021. 2 ~ 현재</sub>
+        <span className="vitae_item_description">
+          대학생 연합 기업형 IT 동아리
+        </span>
+        <h3>CLUG</h3>
+        <sub>2021. 1 ~ 현재</sub>
+        <span className="vitae_item_description">
+          중앙대학교 유닉스 & 리눅스 사용자 모임
+        </span>
         <h3>깃뚜라미(Gitturami)</h3>
         <sub>2019. 6 ~ 현재</sub>
         <span className="vitae_item_description">
