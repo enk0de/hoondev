@@ -39,6 +39,11 @@ const Vitae = () => {
       </div>
       <div className="vitae_item">
         <h2>수상 및 실적</h2>
+        <h3>2020 CLUG 동계 해커톤</h3>
+        <sub>2021. 2</sub>
+        <span className="vitae_item_description">
+          1등(최우수상) 수상
+        </span>
         <h3>CDIC 캡스톤디자인공모전</h3>
         <sub>2020. 10</sub>
         <span className="vitae_item_description">
