@@ -21,6 +21,14 @@ const Vitae = () => {
         </div>
       </div>
       <div className="vitae_item">
+        <h2>경력</h2>
+        <h3>에멘탈</h3>
+        <sub>2020. 7~</sub>
+        <span className="vitae_item_description">
+          Angular 프론트엔드 엔지니어
+        </span>
+      </div>
+      <div className="vitae_item">
         <h2>학력</h2>
         <h3>중앙대학교 서울캠퍼스</h3>
         <sub>2019. 3~</sub>
@@ -28,12 +36,6 @@ const Vitae = () => {
           소프트웨어학부 학부과정 재학중(휴학예정)
           <br />총 4학기 총학점평균 — <b>3.97</b> / 4.50
           <br />총 4학기 전공학점평균 — <b>4.12</b> / 4.50
-          <br />
-        </span>
-        <h3>남산고등학교</h3>
-        <sub>2016. 3~ 2019. 1</sub>
-        <span className="vitae_item_description">
-          이공계열 졸업
           <br />
         </span>
       </div>

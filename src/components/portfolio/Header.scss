@@ -14,6 +14,11 @@
 
   .navbar_left {
     position: relative;
+    margin-left: 30px;
+
+    @media only (max-width: 768px) {
+      margin-left: 16px;
+    }
 
     .menu {
       font-size: 16px;
@@ -21,12 +26,12 @@
       text-decoration: none;
       transition: all ease 0.3s 0s;
 
-      &:hover {
-        opacity: 0.8;
+      @media only (max-width: 768px) {
+        font-size: 14px;
       }
 
-      @media only (max-width: 768px) {
-        visibility: hidden;
+      &:hover {
+        opacity: 0.8;
       }
     }
   }
@@ -55,6 +60,11 @@
 
   .navbar_right {
     margin-right: 30px;
+
+    @media only (max-width: 768px) {
+      margin-right: 16px;
+    }
+
     justify-content: flex-end;
     -webkit-box-pack: end;
   }

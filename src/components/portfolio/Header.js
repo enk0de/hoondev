@@ -18,19 +18,8 @@ const Header = () => {
   return (
     <div className="header_container">
       <div className="navbar_left">
-        <div className="hamburger-btn" onClick={onClickHamburger}>
-          <HamburgerButton
-            open={open}
-            width={16}
-            height={12}
-            strokeWidth={2}
-            color="black"
-            animationDuration={0.2}
-          />
-        </div>
-
         <a href='https://feed.hoondev.com' target="_blank" className="menu">
-          피드 블로그
+          피드
         </a>
       </div>
       <div className="navbar_center">
