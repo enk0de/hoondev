@@ -96,14 +96,6 @@ const Project = () => {
                             </ul>
                         </ul>
                     </p>
-                    <a
-                        target="_blank"
-                        href="https://bznav.com/"
-                        className="static_btn rounded pb"
-                        style={{marginRight: '10px', marginBottom: '10px'}}
-                    >
-                        LIVE SERVICE
-                    </a>
                 </div>
             </div>
             <div className="content_container" id="bznav_mobile">
@@ -128,14 +120,6 @@ const Project = () => {
                             <li>서비스 앱 내부 iframe과 임베드 앱 간의 통신을 위한 브릿지 개발</li>
                         </ul>
                     </p>
-                    <a
-                        target="_blank"
-                        href="https://apps.apple.com/kr/app/%EB%B9%84%EC%A6%88%EB%84%B5/id1186216942"
-                        className="static_btn rounded pb"
-                        style={{marginRight: '10px', marginBottom: '10px'}}
-                    >
-                        LIVE SERVICE
-                    </a>
                 </div>
             </div>
             <div className="content_container" id="rtcorona">
