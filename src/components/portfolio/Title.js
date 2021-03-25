@@ -35,9 +35,9 @@ const Title = () => {
             <div className="description">
                 <span className="name">임지훈</span>
                 <p>
-                    중앙대학교 소프트웨어학부 재학
+                    <b>UI/UX를 사랑하는</b>
                     <br/>
-                    <b>UI/UX를 사랑하는</b> 프론트엔드 엔지니어
+                    프론트엔드 엔지니어
                 </p>
             </div>
             <a
