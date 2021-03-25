@@ -17,7 +17,7 @@ span {
 
 h2,
 h3 {
-  color: #42474b;
+  color: #484848;
 }
 
 h3 {
@@ -35,7 +35,7 @@ h3 {
     font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.2ch;
-    color: #42474b;
+    color: #4c4c4c;
     @media only (max-width: 768px) {
       font-size: 1.1rem;
     }
@@ -43,7 +43,7 @@ h3 {
 
   .yellow_subtitle {
     position: relative;
-    color: #42474b;
+    color: #4a4a4a;
     margin: 10px 0 20px 0px;
     display: inline-block;
     font-size: 1rem;
@@ -65,13 +65,13 @@ h3 {
 
     &.fa {
       margin-right: 7px;
-      color: #42474b;
+      color: #484848;
     }
   }
 
   .yellow_btn {
     position: relative;
-    color: #42474b;
+    color: #4a4a4a;
     display: inline-block;
     font-size: 1rem;
     font-weight: 700;
@@ -92,7 +92,7 @@ h3 {
 
     .fa {
       margin-right: 7px;
-      color: #42474b;
+      color: #484848;
     }
   }
 
