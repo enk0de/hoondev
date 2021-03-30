@@ -100,9 +100,9 @@ const Project = () => {
                             <li>디자인 시스템 단위 독립 스타일 작업</li>
                             <li>데이터 그리드 사용성 개선 작업</li>
                             <li>Angular Dependency Injectable한 채널톡 부착 로직 구현</li>
-                            <li>공통적으로 사용 가능한 상세 그리드 페이지 구현</li>
                             <li>Cypress를 이용한 E2E 테스트 작업</li>
                             <li>Jest를 이용한 유닛 테스트 작업</li>
+                            <li>공통적으로 사용 가능한 상세 그리드 페이지 구현</li>
                             <ul>
                                 <li>URL Query Param에 대해 그리드 데이터 필터링 및 실시간 반영 구현</li>
                                 <li>상세하게 날짜를 선택할 수 있는 Date Picker 구현</li>
