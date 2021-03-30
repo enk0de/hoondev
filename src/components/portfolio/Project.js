@@ -80,16 +80,29 @@ const Project = () => {
                         중소사업자들의 편리하고 간편한 사업관리를 위한 솔루션을 제공하는 웹 버전 서비스
                         <ul>
                             <li>스타일 일관성, 과도한 의존성 제거를 위해 적극적으로 코드 리팩토링</li>
-                            <li>거래처 관리 서비스 개발</li>
+                            <li><b>거래처 관리 서비스 개발</b></li>
                             <ul>
+                                <li>Spread.js를 이용해 관리하던 거래처들을 재구성하여 사용자 경험에 맞춰 개선된 형태의 서비스</li>
                                 <li>복잡한 비즈니스 로직을 효율적으로 처리하기 위해 컴포넌트 단위 로직 정책 수립</li>
                                 <li>클라이언트에서 처리 가능한 최대한의 에러 핸들러 구현</li>
+                            </ul>
+                            <li><b>앱 코어 서비스 개발</b></li>
+                            <ul>
+                                <li>사업체 정보 관리, 구성원 관리, 데이터 연동 관리 등 구현</li>
+                                <li>공통 레이아웃, Modal, Dialog 등의 코어 컴포넌트 개발</li>
+                            </ul>
+                            <li><b>데이터 그리드 사용성 개선</b></li>
+                            <ul>
+                                <li>사업체 정보 관리, 구성원 관리, 데이터 연동 관리 등 구현</li>
+                                <li>공통 레이아웃, Modal, Dialog 등의 코어 컴포넌트 개발</li>
                             </ul>
                             <li>UI/UX 성능 및 사용성 개선 작업</li>
                             <li>디자인 시스템 단위 독립 스타일 작업</li>
                             <li>데이터 그리드 사용성 개선 작업</li>
                             <li>Angular Dependency Injectable한 채널톡 부착 로직 구현</li>
                             <li>공통적으로 사용 가능한 상세 그리드 페이지 구현</li>
+                            <li>Cypress를 이용한 E2E 테스트 작업</li>
+                            <li>Jest를 이용한 유닛 테스트 작업</li>
                             <ul>
                                 <li>URL Query Param에 대해 그리드 데이터 필터링 및 실시간 반영 구현</li>
                                 <li>상세하게 날짜를 선택할 수 있는 Date Picker 구현</li>
@@ -118,6 +131,30 @@ const Project = () => {
                             <li>더 나은 UX 플로우를 위해 디자이너/기획자와 함께 커뮤니케이션하며 적극적으로 개선</li>
                             <li>서비스 비즈니스 로직 독립 운영을 위한 임베드 앱 개발</li>
                             <li>서비스 앱 내부 iframe과 임베드 앱 간의 통신을 위한 브릿지 개발</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div className="content_container" id="bznav_sme">
+                <div className="content_item">
+                    <h2>
+                        비즈넵 SSO 뷰 개발<span className="content_job">2020.10~</span>
+                    </h2>
+                    <div className="content_stacks">
+                        <span className="span_stack">ANGULAR</span>
+                        <span className="span_stack">RxJS</span>
+                        <span className="span_stack">REST</span>
+                        <span className="span_stack">PURE COMPONENT</span>
+                        <span className="span_stack">UX</span>
+                    </div>
+                    <p className="content_description">
+                        여러 비즈넵 서비스의 인증 플로우를 관리하는 서비스
+                        <ul>
+                            <li>UI 라이브러리의 사용 없이 Input, Button, CheckBox, RadioButton 등 순수하게 개발</li>
+                            <li><b>Form Input의 Validation에 따라 툴팁 제공</b></li>
+                            <li><b>앱 코어 서비스 개발</b></li>
+                            <li>UI/UX 성능 및 사용성 개선 작업</li>
+                            <li>디자인 시스템 단위 독립 스타일 작업</li>
                         </ul>
                     </p>
                 </div>
