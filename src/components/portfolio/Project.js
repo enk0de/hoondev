@@ -98,8 +98,8 @@ const Project = () => {
                             </ul>
                             <li><b>공통적으로 사용 가능한 상세 그리드 페이지 구현</b></li>
                             <ul>
-                                <li>URL Query Param에 대해 그리드 데이터 필터링 및 실시간 반영 구현</li>
-                                <li>상세하게 날짜를 선택할 수 있는 Date Picker 구현</li>
+                                <li>URL Query Param으로 그리드 데이터 필터링 및 실시간 반영 구현</li>
+                                <li>상세하게 날짜를 선택할 수 있는 기간 선택 필터 구현</li>
                             </ul>
                             <li>UI/UX 성능 및 사용성 개선 작업</li>
                             <li>디자인 시스템 단위 독립 스타일 작업</li>
