@@ -25,7 +25,7 @@ const Vitae = () => {
         <h3>에멘탈</h3>
         <sub>2020. 7~</sub>
         <span className="vitae_item_description">
-          Angular 프론트엔드 엔지니어
+          프론트엔드 엔지니어<br/><sup>현역 산업기능요원으로 복무 중</sup>
         </span>
       </div>
       <div className="vitae_item">

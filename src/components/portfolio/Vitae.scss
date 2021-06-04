@@ -37,6 +37,10 @@
     .vitae_item_description {
       display: block;
       margin-top: 10px;
+
+      > sup {
+        opacity: 0.7;
+      }
     }
   }
 
